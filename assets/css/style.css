@@ -14,9 +14,7 @@ body {
     left: 100px;
 }
 
-.caja,
-.segunda-caja,
-.tercera-caja {
+.box {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -37,4 +35,135 @@ body {
 
 .tercera-caja {
     background-color: green;
+}
+
+
+/*
+Absolutas
+Se es absoluta con respecto al padre, al primer padre que se encuentre cuya
+posición no sea static
+*/
+
+.absolutas {
+    border: 10px solid plum;
+    width: 90%;
+    margin: 0 auto;
+    height: 250px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.abso-uno {
+    background-color: green;
+    position: absolute;
+    /*Se apega al body por que es su primer padre que no es estatico*/
+    bottom: 0;
+    right: 0;
+}
+
+.contenedor-abso {
+    border: 10px solid peru;
+}
+
+.abso-dos {
+    background-color: rosybrown;
+    position: absolute;
+    top: 100%;
+    left: 200px;
+}
+
+
+/*Fixed*/
+
+.fija-uno {
+    background-color: yellowgreen;
+    /*Este es con respecto al navegador*/
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.fija-uno span {
+    background-color: cornflowerblue;
+    line-height: 18px;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+}
+
+.fija-dos {
+    position: fixed;
+    background-color: rebeccapurple;
+}
+
+.caja-cool {
+    width: 400px;
+    height: 300px;
+    background-image: url(http://www.emprender-facil.com/wp-content/uploads/2015/04/Idea-de-negocios-Restauraci%C3%B3n-de-bicicletas-antiguas-des-e1430239681249.png);
+    background-size: cover;
+    position: relative;
+}
+
+.caja-cool span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(105, 210, 220, 0.8);
+    /*Para darle padding*/
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+
+.caja-cool span i {
+    color: blue;
+}
+
+.ice-cream {
+    position: fixed;
+    top: 400px;
+    left: 400px;
+}
+
+.sabor1,
+.sabor2 {
+    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sabor1 {
+    position: relative;
+    top: 45px;
+}
+
+.sabor2 {
+    background-color: magenta;
+    position: relative;
+    top: 17px;
+}
+
+.cono {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 150px solid chocolate;
+    position: relative;
+}
+
+.cereza {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+    position: relative;
+    left: 14px;
+    bottom: 8px;
 }
