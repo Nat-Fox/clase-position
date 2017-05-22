@@ -1,3 +1,40 @@
 body {
     background-color: maroon;
 }
+
+.caja {
+    background-color: rosybrown;
+    position: relative;
+    /* Se va a la izquierda 
+    right: 201px;
+    Se va a la derecha
+    left: 200px;*/
+    top: 20px;
+    /*Se va a la derecha y se monta en la otra caja*/
+    left: 100px;
+}
+
+.caja,
+.segunda-caja,
+.tercera-caja {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    font-size: 90px;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 200px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.segunda-caja {
+    /*quedaria este sobre, se sobreescriben*/
+    position: relative;
+    background: blue;
+    right: 201.5px;
+}
+
+.tercera-caja {
+    background-color: green;
+}
